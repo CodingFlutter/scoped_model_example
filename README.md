@@ -17,14 +17,13 @@ In this project the **ScopedModel** Widget is used in order to pass two data Mod
 
 # lib/models/*
 
-This directory contains of three data Models : **ListModel**, **CartModel**, **CombainModel** and an object **Fruit** skeleton. One classes (In this case, **CombainModel** are provided in the main.dart. This class represent the app state.
+This directory contains of three data Models : **ListModel**, **CartModel**, **CombinModel** and an object **Fruit** skeleton. One classes (In this case, **CombinModel** are provided in the main.dart. This class represent the app state.
 
 The **ListModel** data Model extends **Model** class.
 
 The **CartModel** data Model contains of **Fruit** class and  extends the **ShoppingModel** data Model.
 
 The **CombainModel** data Model extends **Model** class with **CartModel** and **ListModel** data Models.
-
 
 
 # lib/screens/*
@@ -35,10 +34,16 @@ This directory contains the widgets (**MyList** and **MyCart**) used to construc
 
 This directory contains widgets (**MyAppBar**, **MyFruitItem**, **AddButton**, **CartList**, and **CartTotal**) used to construct the two screens of the app: ***a list of fruits and a cart***.
 
-A widget **MyFruitItem** has access to the current state of the list of fruits (**ListModel**) via **Provider.of**.
+A widget **MyFruitItem** has access to the current state of the list of fruits (**ListModel**) via **CombinModel** instance.
 
-The widgets **AddButton** and **CartList**, have access to the current state of the cart (**CartModel**) via **Provider.of**.
+The widgets **AddButton** and **CartList**, have access to the current state of the cart (**CartModel**) via **ScopedModelDescendant**. The ScopedModelDescendant Widget used to find the appropriate **ScopedModel** in the Widget tree.
 
 # lib/style/*
 
 This directory contains of the app **Text Style:** ***fontFamily***, ***fontWeight***, ***fontSize*** and ***text color***.
+
+# Android Platform
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1.png" width="300" height="600"/> <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2.png" width="300" height="600"/>
+
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3.png" width="300" height="600"/> <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/4.png" width="300" height="600"/>
+
