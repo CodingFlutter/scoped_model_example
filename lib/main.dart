@@ -5,8 +5,8 @@ import './style/my_app_theme.dart';
 
 import 'models/combin.dart';
 
-import './screens/cart.dart';
-import './screens/list.dart';
+import 'screens/my_cart.dart';
+import 'screens/my_list.dart';
 
 void main() => runApp(const MyApp());
 
