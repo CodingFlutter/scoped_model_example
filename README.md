@@ -12,7 +12,7 @@ This is **a widget tree** of the **Scoped Model Example** app:
 
 In order to track states of the object, they need to be provided to widget further down the tree.
 The **Scoped_model** is a set of utilities that allow to pass a data Model from parent Widget down to its descendants.
-In this project the **ScopedModel** Widget is used in order to pass two data Models (in this case: **ListModel** and **CartModel**) deep down the tree and to listen it for changes. 
+In this project the **ScopedModel** Widget is used in order to pass two data Models (in this case: **ListModel** and **CartModel**) via one data Model **CombainModel**, deep down the tree and to listen it for changes. 
 
 
 # lib/models/*
@@ -22,6 +22,8 @@ This directory contains of three data Models : **ListModel**, **CartModel**, **C
 The **ListModel** data Model extends **Model** class.
 
 The **CartModel** data Model contains of **Fruit** class and  extends the **ShoppingModel** data Model.
+
+The **CombainModel** data Model extends **Model** class with **CartModel** and **ListModel** data Models.
 
 
 
