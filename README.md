@@ -4,4 +4,6 @@ A Flutter app example, **Scoped Model Example**, shows a state management approa
 
 This is **a widget tree** of the **Scoped Model Example** app:
 
+![](https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/widget_tree1.png)
+
 
