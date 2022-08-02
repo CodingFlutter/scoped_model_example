@@ -17,12 +17,13 @@ In this project the **ScopedModel** Widget is used in order to pass two data Mod
 
 # lib/models/*
 
+This directory contains of three data Models : **ListModel**, **CartModel**, **CombainModel** and an object **Fruit** skeleton. One classes (In this case, **CombainModel** are provided in the main.dart. This class represent the app state.
 
-The **CartModel** data Model consist of **Fruit** class and  extends the **ShoppingModel** data Model.
+The **ListModel** data Model extends **Model** class.
 
-The **ShoppingModel** data Model extends **Model** class. The **Model** class was extended in order to create **ShoppingModel** model and to listen it for changes.
+The **CartModel** data Model contains of **Fruit** class and  extends the **ShoppingModel** data Model.
 
-This directory contains the model classes: **ListModel**, **CartModel** and an object **Fruit** skeleton. Two classes (In this case, **ListModel** and **CartModel**) are provided in the main.dart. These classes represent the app state.
+
 
 # lib/screens/*
 
