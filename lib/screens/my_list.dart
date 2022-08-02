@@ -3,11 +3,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/list/my_app_bar.dart';
-import '../widgets/list/cupertino_app_bar.dart';
 import '../widgets/list/my_fruit_item.dart';
+import '../widgets/list/cupertino_fruit_item.dart';
 
 class MyList extends StatelessWidget {
-  const MyList({Key? key}) : super(key: key);
+  MyList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,8 +31,9 @@ class MyList extends StatelessWidget {
                 onTap: () => Navigator.pushNamed(context, '/cart'),
               ),
             ),
-            child: CupertinoScrollbar(
-              child: Text('yes'),
+            child: ListView.builder(
+              itemCount: 20,
+              itemBuilder: (context, index) => CupertinoFruitItem(index),
             ),
           )
         : Scaffold(

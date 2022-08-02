@@ -1,4 +1,6 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import '../../models/combin.dart';
 import 'package:scoped_model/scoped_model.dart';
 
@@ -15,24 +17,44 @@ class AddButton extends StatelessWidget {
     return ScopedModelDescendant<CombinModel>(
         rebuildOnChange: true,
         builder: (BuildContext context, Widget child, CombinModel model) {
-          return FlatButton(
-            onPressed:
-                model.fruits.contains(fruit) ? null : () => model.add(fruit),
-            splashColor: Theme.of(context).primaryColor,
-            child: model.fruits.contains(fruit)
-                ? const Icon(
-                    Icons.check,
-                    semanticLabel: 'Added',
-                  )
-                : Container(
-                    padding: const EdgeInsets.all(5),
-                    color: Colors.red[300],
-                    child: Text(
-                      'add fruit',
-                      style: textTheme1,
-                    ),
-                  ),
-          );
+          return Platform.isIOS
+              ? CupertinoButton(
+                  onPressed: model.fruits.contains(fruit)
+                      ? null
+                      : () => model.add(fruit),
+                  child: model.fruits.contains(fruit)
+                      ? const Icon(
+                          Icons.check,
+                          semanticLabel: 'Added',
+                        )
+                      : Container(
+                          padding: const EdgeInsets.all(5),
+                          color: Colors.red,
+                          child: Text(
+                            'add fruit',
+                            style: textTheme1,
+                          ),
+                        ),
+                )
+              : FlatButton(
+                  onPressed: model.fruits.contains(fruit)
+                      ? null
+                      : () => model.add(fruit),
+                  splashColor: Theme.of(context).primaryColor,
+                  child: model.fruits.contains(fruit)
+                      ? const Icon(
+                          Icons.check,
+                          semanticLabel: 'Added',
+                        )
+                      : Container(
+                          padding: const EdgeInsets.all(5),
+                          color: Colors.red[300],
+                          child: Text(
+                            'add fruit',
+                            style: textTheme1,
+                          ),
+                        ),
+                );
         });
   }
 }

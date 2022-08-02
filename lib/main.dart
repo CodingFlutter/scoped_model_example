@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         theme: myAppTheme,
         initialRoute: '/',
         routes: {
-          '/': (context) => const MyList(),
+          '/': (context) => MyList(),
           '/cart': (context) => const MyCart(),
         },
       ),
