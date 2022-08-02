@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/list/my_app_bar.dart';
+import '../widgets/list/cupertino_app_bar.dart';
 import '../widgets/list/my_fruit_item.dart';
 import '../widgets/list/cupertino_fruit_item.dart';
 
@@ -11,47 +12,62 @@ class MyList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var textTheme4 = Theme.of(context).textTheme.headline4;
+    final pageBody = CustomScrollView(
+      slivers: [
+        const SliverToBoxAdapter(
+          child: SizedBox(
+            height: 12,
+          ),
+        ),
+        SliverList(
+          delegate: SliverChildBuilderDelegate(
+            (context, index) => CupertinoFruitItem(index),
+          ),
+        ),
+      ],
+    );
+    final myAppBar = AppBar(
+      backgroundColor: Colors.red[300],
+      title: Text(
+        'The List of Fruits',
+        style: textTheme4,
+      ),
+      actions: [
+        IconButton(
+          icon: const Icon(Icons.shopping_cart),
+          onPressed: () => Navigator.pushNamed(context, '/cart'),
+        ),
+      ],
+    );
+
+    final cupertinoAppbar = CupertinoNavigationBar(
+      backgroundColor: Colors.redAccent,
+      middle: const Text(
+        'The List of Fruits',
+        style: TextStyle(
+          fontWeight: FontWeight.w600,
+          fontSize: 20,
+          color: Colors.white,
+        ),
+      ),
+      trailing: GestureDetector(
+        child: const Icon(
+          CupertinoIcons.shopping_cart,
+          color: Colors.white,
+        ),
+        onTap: () => Navigator.pushNamed(context, '/cart'),
+      ),
+    );
+
     return Platform.isIOS
         ? CupertinoPageScaffold(
-            navigationBar: CupertinoNavigationBar(
-              backgroundColor: Colors.redAccent,
-              middle: const Text(
-                'The List of Fruits',
-                style: TextStyle(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 20,
-                  color: Colors.white,
-                ),
-              ),
-              trailing: GestureDetector(
-                child: const Icon(
-                  CupertinoIcons.shopping_cart,
-                  color: Colors.white,
-                ),
-                onTap: () => Navigator.pushNamed(context, '/cart'),
-              ),
-            ),
-            child: ListView.builder(
-              itemCount: 20,
-              itemBuilder: (context, index) => CupertinoFruitItem(index),
-            ),
+            navigationBar: cupertinoAppbar,
+            child: pageBody,
           )
         : Scaffold(
-            body: CustomScrollView(
-              slivers: [
-                const MyAppBar(),
-                const SliverToBoxAdapter(
-                  child: SizedBox(
-                    height: 12,
-                  ),
-                ),
-                SliverList(
-                  delegate: SliverChildBuilderDelegate(
-                    (context, index) => MyFruitItem(index),
-                  ),
-                ),
-              ],
-            ),
+            body: pageBody,
+            appBar: myAppBar,
           );
   }
 }
