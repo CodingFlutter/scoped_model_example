@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 
-import '../../models/main_model.dart';
+import '../../models/combain.dart';
 
 class CartList extends StatelessWidget {
   const CartList({Key? key}) : super(key: key);
@@ -12,7 +12,7 @@ class CartList extends StatelessWidget {
 
     return ScopedModelDescendant(
         rebuildOnChange: true,
-        builder: (BuildContext context, Widget child, MainModel model) {
+        builder: (BuildContext context, Widget child, CombainModel model) {
           return ListView.builder(
             itemCount: model.fruits.length,
             itemBuilder: (context, index) => ListTile(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 
-import '../../models/main_model.dart';
+import '../../models/combain.dart';
 
 class CartTotal extends StatelessWidget {
   const CartTotal({Key? key}) : super(key: key);
@@ -19,7 +19,8 @@ class CartTotal extends StatelessWidget {
           children: [
             ScopedModelDescendant(
                 rebuildOnChange: true,
-                builder: (BuildContext context, Widget child, MainModel model) {
+                builder:
+                    (BuildContext context, Widget child, CombainModel model) {
                   return Text('\$${model.totalPrice}', style: priceStyle);
                 }),
             const SizedBox(width: 25),

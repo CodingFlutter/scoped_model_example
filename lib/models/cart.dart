@@ -1,8 +1,8 @@
-import 'shopping.dart';
+import 'list.dart';
 
 import 'fruit.dart';
 
-class CartModel extends ShoppingModel {
+class CartModel extends ListModel {
   final List<int> _fruitIds = [];
 
   ///List of fruits in the cart.

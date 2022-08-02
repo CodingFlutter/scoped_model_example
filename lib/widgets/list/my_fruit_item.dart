@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../../models/main_model.dart';
+import '../../models/combain.dart';
 
 import 'add_button.dart';
 
 class MyFruitItem extends StatelessWidget {
   final int index;
-  final MainModel model = MainModel.instance;
+  final CombainModel model = CombainModel.instance;
 
   MyFruitItem(this.index, {Key? key}) : super(key: key);
 

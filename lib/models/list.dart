@@ -2,7 +2,7 @@ import 'package:scoped_model/scoped_model.dart';
 
 import 'fruit.dart';
 
-abstract class ShoppingModel extends Model {
+abstract class ListModel extends Model {
   static const _fruitNames = [
     'Apples',
     'Banana',

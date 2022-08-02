@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../models/main_model.dart';
+import '../../models/combain.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import '../../models/fruit.dart';
@@ -12,9 +12,9 @@ class AddButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var textTheme1 = Theme.of(context).textTheme.headline1;
-    return ScopedModelDescendant<MainModel>(
+    return ScopedModelDescendant<CombainModel>(
         rebuildOnChange: true,
-        builder: (BuildContext context, Widget child, MainModel model) {
+        builder: (BuildContext context, Widget child, CombainModel model) {
           return FlatButton(
             onPressed:
                 model.fruits.contains(fruit) ? null : () => model.add(fruit),
