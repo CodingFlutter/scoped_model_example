@@ -6,4 +6,36 @@ This is **a widget tree** of the **Scoped Model Example** app:
 
 ![](https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/widget_tree1.png)
 
+# A Flutter app structure:
 
+# lib/main.dart
+
+In order to track states of the object, they need to be provided to widget further down the tree.
+The **Scoped_model** is a set of utilities that allow to pass a data Model from parent Widget down to its descendants.
+In this project the **ScopedModel** Widget is used in order to pass two data Models (in this case: **ListModel** and **CartModel**) deep down the tree and to listen it for changes. 
+
+
+# lib/models/*
+
+
+The **CartModel** data Model consist of **Fruit** class and  extends the **ShoppingModel** data Model.
+
+The **ShoppingModel** data Model extends **Model** class. The **Model** class was extended in order to create **ShoppingModel** model and to listen it for changes.
+
+This directory contains the model classes: **ListModel**, **CartModel** and an object **Fruit** skeleton. Two classes (In this case, **ListModel** and **CartModel**) are provided in the main.dart. These classes represent the app state.
+
+# lib/screens/*
+
+This directory contains the widgets (**MyList** and **MyCart**) used to construct the two screens of the app with other widgets: ***a list of fruits and a cart***.
+
+# lib/widgets/*
+
+This directory contains widgets (**MyAppBar**, **MyFruitItem**, **AddButton**, **CartList**, and **CartTotal**) used to construct the two screens of the app: ***a list of fruits and a cart***.
+
+A widget **MyFruitItem** has access to the current state of the list of fruits (**ListModel**) via **Provider.of**.
+
+The widgets **AddButton** and **CartList**, have access to the current state of the cart (**CartModel**) via **Provider.of**.
+
+# lib/style/*
+
+This directory contains of the app **Text Style:** ***fontFamily***, ***fontWeight***, ***fontSize*** and ***text color***.
