@@ -43,5 +43,5 @@ The widgets **AddButton** and **CartList**, have access to the current state of 
 This directory contains of the app **Text Style:** ***fontFamily***, ***fontWeight***, ***fontSize*** and ***text color***.
 
 
-<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1.png" width="250" height="400">
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1.png" width="200" height="600">
 
