@@ -47,6 +47,9 @@ This directory contains of the app **Text Style:** ***fontFamily***, ***fontWeig
 
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2.png" width="300" height="600">
 
+
+
+
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3.png" width="300" height="600">
 
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/4.png" width="300" height="600">
