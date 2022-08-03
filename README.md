@@ -50,9 +50,11 @@ This directory contains of the app **Text Style:** ***fontFamily***, ***fontWeig
 </p>
 
 # Android Platform
+<p alig="middle" >
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1a.png" width="180" height="400"/>
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2a.png" width="180"height="400"/>
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3a.png" width="180" height="400"/>
+</p>
 
 
 
