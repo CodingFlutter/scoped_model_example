@@ -3,7 +3,7 @@ import 'package:scoped_model/scoped_model.dart';
 
 import './style/my_app_theme.dart';
 
-import 'models/combin.dart';
+import 'models/combine.dart';
 
 import 'screens/my_cart.dart';
 import 'screens/my_list.dart';
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScopedModel(
-      model: CombinModel.instance,
+      model: CombineModel.instance,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'State Management Scoped Model',

@@ -3,13 +3,13 @@ import 'package:flutter/cupertino.dart';
 
 import 'package:cupertino_list_tile/cupertino_list_tile.dart';
 
-import '../../models/combin.dart';
+import '../../models/combine.dart';
 
 import 'add_button.dart';
 
 class FruitItem extends StatelessWidget {
   final int index;
-  final CombinModel model = CombinModel.instance;
+  final CombineModel model = CombineModel.instance;
 
   FruitItem(this.index, {Key? key}) : super(key: key);
 

@@ -1,10 +1,9 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:scoped_model/scoped_model.dart';
-import 'package:cupertino_list_tile/cupertino_list_tile.dart';
 
-import '../../models/combin.dart';
+import 'package:scoped_model/scoped_model.dart';
+
+import '../../models/combine.dart';
 
 class CartList extends StatelessWidget {
   const CartList({Key? key}) : super(key: key);
@@ -15,7 +14,7 @@ class CartList extends StatelessWidget {
 
     return ScopedModelDescendant(
         rebuildOnChange: true,
-        builder: (BuildContext context, Widget child, CombinModel model) {
+        builder: (BuildContext context, Widget child, CombineModel model) {
           return ListView.builder(
             itemCount: model.fruits.length,
             itemBuilder: (context, index) => Platform.isIOS

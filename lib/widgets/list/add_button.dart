@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import '../../models/combin.dart';
+import '../../models/combine.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import '../../models/fruit.dart';
@@ -14,9 +14,9 @@ class AddButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var textTheme1 = Theme.of(context).textTheme.headline1;
-    return ScopedModelDescendant<CombinModel>(
+    return ScopedModelDescendant<CombineModel>(
         rebuildOnChange: true,
-        builder: (BuildContext context, Widget child, CombinModel model) {
+        builder: (BuildContext context, Widget child, CombineModel model) {
           return Platform.isIOS
               ? CupertinoButton(
                   onPressed: model.fruits.contains(fruit)
