@@ -42,8 +42,15 @@ The widgets **AddButton** and **CartList**, have access to the current state of 
 
 This directory contains of the app **Text Style:** ***fontFamily***, ***fontWeight***, ***fontSize*** and ***text color***.
 
+# IOS Platform
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1i.png" width="180" height="400"/>
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2i.png" width="180"height="400"/>
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3i.png" width="180" height="400"/>
+
 # Android Platform
-<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1a.png" width="150" height="400"/><img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2a.png" width="150"height="400"/><img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3a.png" width="150" height="400"/>
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1a.png" width="180" height="400"/>
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2a.png" width="180"height="400"/>
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3a.png" width="180" height="400"/>
 
 
 
