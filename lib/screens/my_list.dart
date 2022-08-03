@@ -2,10 +2,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/list/my_app_bar.dart';
-import '../widgets/list/cupertino_app_bar.dart';
-import '../widgets/list/my_fruit_item.dart';
-import '../widgets/list/cupertino_fruit_item.dart';
+import '../widgets/list/fruit_item.dart';
 
 class MyList extends StatelessWidget {
   MyList({Key? key}) : super(key: key);
@@ -22,7 +19,7 @@ class MyList extends StatelessWidget {
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate(
-            (context, index) => CupertinoFruitItem(index),
+            (context, index) => FruitItem(index),
           ),
         ),
       ],

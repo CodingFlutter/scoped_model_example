@@ -7,11 +7,11 @@ import '../../models/combin.dart';
 
 import 'add_button.dart';
 
-class CupertinoFruitItem extends StatelessWidget {
+class FruitItem extends StatelessWidget {
   final int index;
   final CombinModel model = CombinModel.instance;
 
-  CupertinoFruitItem(this.index, {Key? key}) : super(key: key);
+  FruitItem(this.index, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
