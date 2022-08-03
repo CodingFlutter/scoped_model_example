@@ -44,16 +44,20 @@ This directory contains of the app **Text Style:** ***fontFamily***, ***fontWeig
 
 # IOS Platform
 <p align="middle">
-<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1i.png" width="200" height="500"/>
-<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2i.png" width="200"height="500"/>
-<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3i.png" width="200" height="500"/>
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1i.png" width="200" height="600"/>
+  
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2i.png" width="200"height="600"/>
+  
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3i.png" width="200" height="600"/>
 </p>
 
 # Android Platform
 <p alig="middle" >
-<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1a.png" width="200" height="500"/>
-<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2a.png" width="200"height="500"/>
-<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3a.png" width="200" height="500"/>
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1a.png" width="200" height="600"/>
+  
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2a.png" width="200"height="600"/>
+  
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3a.png" width="200" height="600"/>
 </p>
 
 
