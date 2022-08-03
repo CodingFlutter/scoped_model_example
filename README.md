@@ -44,9 +44,9 @@ This directory contains of the app **Text Style:** ***fontFamily***, ***fontWeig
 
 # IOS Platform
 <p align="left">
-<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1i.png" width="250" height="600"/> 
-<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2i.png" width="250"height="600"/> 
-<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3i.png" width="250" height="600"/>
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1i.png" width="300" height="600"/> 
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2i.png" width="300"height="600"/> 
+<img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3i.png" width="300" height="600"/>
 </p>
 
 # Android Platform
