@@ -43,14 +43,14 @@ The widgets **AddButton** and **CartList**, have access to the current state of 
 This directory contains of the app **Text Style:** ***fontFamily***, ***fontWeight***, ***fontSize*** and ***text color***.
 
 # IOS Platform
-<p align="middle">
+<p align="left">
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1i.png" width="250" height="600"/> 
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2i.png" width="250"height="600"/> 
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3i.png" width="250" height="600"/>
 </p>
 
 # Android Platform
-<p align="middle" >
+<p align="left" >
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1a.png" width="250" height="600"/> 
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/2a.png" width="250"height="600"/> 
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/3a.png" width="250" height="600"/>
