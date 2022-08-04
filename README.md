@@ -12,16 +12,16 @@ This is **a widget tree** of the **Scoped Model Example** app:
 
 In order to track states of the object, they need to be provided to widget further down the tree.
 The **Scoped_model** is a set of utilities that allow to pass a data Model from parent Widget down to its descendants.
-In this project the **ScopedModel** Widget is used in order to pass two data Models (in this case: **ListModel** and **CartModel**) via one data Model **CombainModel**, deep down the tree and to listen it for changes. 
+In this project the **ScopedModel** Widget is used in order to pass two data Models (in this case: **ListModel** and **CartModel**) via one data Model **CombainModel**, deep down the tree and to listen it for changes. **ScopedModelDescendant** Widget used in order to find the appropriate **ScopedModel** in the Widget tree. It rebuild automatically whenever the Model notifies that changes has taken place. When add button is pressed **CartModel** notifies that changes has taken place and **ScopedModelDescendant** Widget (**MyCart** screen) gets rebuilded automatically.
 
 
 # lib/models/*
 
-This directory contains of three data Models : **ListModel**, **CartModel**, **CombinModel** and an object **Fruit** skeleton. One classes (In this case, **CombinModel** are provided in the main.dart. This class represent the app state.
+This directory contains of three data Models : **ListModel**, **CartModel**, **CombinModel** and an object **Fruit** skeleton. One data Model (In this case, **CombinModel** are provided in the main.dart. This class represent the app state.
 
 The **ListModel** data Model extends **Model** class.
 
-The **CartModel** data Model contains of **Fruit** class and  extends the **ShoppingModel** data Model.
+The **CartModel** data Model contains of **Fruit** class and  extends the **ListModel** data Model.
 
 The **CombainModel** data Model extends **Model** class with **CartModel** and **ListModel** data Models.
 
@@ -32,9 +32,9 @@ This directory contains the widgets (**MyList** and **MyCart**) used to construc
 
 # lib/widgets/*
 
-This directory contains widgets (**MyAppBar**, **MyFruitItem**, **AddButton**, **CartList**, and **CartTotal**) used to construct the two screens of the app: ***a list of fruits and a cart***.
+This directory contains widgets (**FruitItem**, **AddButton**, **CartList**, and **CartTotal**) used to construct the two screens of the app: ***a list of fruits and a cart***.
 
-A widget **MyFruitItem** has access to the current state of the list of fruits (**ListModel**) via **CombinModel** instance.
+A widget **FruitItem** has access to the current state of the list of fruits (**ListModel**) via **CombinModel** instance.
 
 The widgets **AddButton** and **CartList**, have access to the current state of the cart (**CartModel**) via **ScopedModelDescendant**. The ScopedModelDescendant Widget used to find the appropriate **ScopedModel** in the Widget tree.
 
