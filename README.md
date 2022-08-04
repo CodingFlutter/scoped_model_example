@@ -42,6 +42,27 @@ The widgets **AddButton**, **CartList** and **CartTotal** have access to the cur
 
 This directory contains of the app **Text Style:** ***fontFamily***, ***fontWeight***, ***fontSize*** and ***text color***.
 
+# pubspec.yaml
+In order, to enable mixins, the code was added to the **pubspec.yaml** file:
+
+***analyzer:***
+
+ ***strong-mode: true***
+  
+ ***language:***
+  
+   ***enableSuperMixins: true***
+    
+
+# analysis_options.yaml
+In order, to make understand a code editor that mixins not an error anymore, the **analysis_options.yaml** file was created in the same directory as  **pubspec.yaml**, with code:
+
+***analyzer:***
+
+  ***errors:***
+  
+   ***mixin_inherits_from_not_object: ignore***
+
 # IOS Platform
 <p align="left">
 <img src="https://github.com/CodingFlutter/scoped_model_example/blob/main/assets/images/1i.png" width="300" height="600"/> 
