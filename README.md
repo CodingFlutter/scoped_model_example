@@ -36,7 +36,7 @@ This directory contains widgets (**FruitItem**, **AddButton**, **CartList**, and
 
 A widget **FruitItem** has access to the current state of the list of fruits (**ListModel**) via **CombinModel** instance.
 
-The widgets **AddButton**, **CartList** and **CartTotal** have access to the current state of the **CombinModel** via **ScopedModelDescendant**. The ScopedModelDescendant Widget used to find the appropriate **ScopedModel** in the Widget tree.
+The widgets **AddButton**, **CartList** and **CartTotal** has access to the current state of the **CombinModel** via **ScopedModelDescendant**. The ScopedModelDescendant Widget used to find the appropriate **ScopedModel** in the Widget tree.
 
 # lib/style/*
 
